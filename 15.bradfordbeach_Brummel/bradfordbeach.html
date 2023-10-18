@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="css/if.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<h1>Some memorable movies</h1>
+<h3><span class="ital">Bradford Beach</span> (Owen Brummel, 2023)</h3>
+	<div class="sidebyside" id="image">
+	<img class="filmStill" onClick="onClick_DTRT_img01()" src="images/bradford1.jpg"  alt="The Rock" > 
+	<img class="filmStill" onClick="onClick_DTRT_img02()" src="images/bradford2.jpg" alt="Rock Plane">
+	<img class="filmStill" onClick="onClick_DTRT_img03()" src="images/bradford3.jpg" alt="Rock sunset">
+		 </div>
+	
+	
+	<p class="filmInfo" id="DTRT_text"> &nbsp;The Rock is a 1996 action/thriller film procuced by Jerry Bruckhimer and Directed by Michael Bay. It stars Sean Connery, Nic Cage, and Ed Harris. The plot concerns an ex-marine played by Harris who breaks into Alcatraz and treatens to launch posion nerve gas on to the city of San Francisco. The government sends Nic Cage, a chemical weapons FBI agent and Sean Connery, a prisoner who escaped alcatraz and is the only one who knows how to break back in, to resuce the day.</p>
+	
+	
+  
+
+	
+</body>
+<script>
+var img01_clicked = false;
+	var img02_clicked = false;
+	var img03_clicked = false;
+	
+	
+	
+	var DTRT_text = document.getElementById('DTRT_text') ;
+	var DTRT00 = "My film Bradford Beach explores the relations that a place has between winter when it is not busy at all and in summer when it is crowded and at it's peak capacity and it also explores the relationships between seasons and how one season is seemingly happier than the other specifically in this location";
+
+	DTRT_text.innerHTML = DTRT00;
+	var DTRT01 ="I used images of the lake waves to create a sense of coldness with no one in them."
+function onClick_DTRT_img01(){ 
+DTRT_text.innerHTML = DTRT01;
+	img01_clicked = true;
+    console.log("img01_clicked = " + img01_clicked);
+} 
+	function onClick_DTRT_img02(){
+DTRT_text.innerHTML= "I used images such as this one of the tiki bar being all abandoned and deserted, I found them helpful in portraying the diffrence between seasons."
+		img02_clicked = true;
+		console.log("img02_clicked =" + img02_clicked);
+	
+function onClick_DTRT_img03(){
+	DTRT_text.innerHTML = "I also used photos of old post cards at the beach to potray the feeling of time passed."
+}
+	</script>
+	
+	
+	
+	
+	
+</html>

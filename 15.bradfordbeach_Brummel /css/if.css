@@ -1,0 +1,27 @@
+.ital {
+	font-style: italic;
+}
+.filmStill {
+	width: 300px;
+	border-style: solid;
+}
+
+
+
+
+
+
+.filmInfo {
+	min-width: 1200px;
+	
+	border-style: solid;
+	border-width: medium;
+	border-collapse: separate;
+	border-radius: 11px 1px 1px;
+	border-spacing: 1200px 1200px;
+}
+body {
+}
+.sidebyside {
+	display: flex;
+}
