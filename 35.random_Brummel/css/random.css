@@ -1,0 +1,8 @@
+@charset "UTF-8";
+.filmStill {
+    width: 200px;
+    border-style: solid;
+}
+.sideBySide {
+    display: flex;
+}

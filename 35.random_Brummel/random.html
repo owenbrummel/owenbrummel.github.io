@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>random.html</title>
+<link href="css/random.css" rel="stylesheet" type="text/css">
+</head>
+
+	
+	
+	
+	
+	
+	
+
+<body>
+<div class="sideBySide">
+	<img class="filmStill" id="leftImage" onClick="randomizer(event)" src="images/pizza.jpg" alt="pizza">
+	<img class="filmStill" id="middleImage" onClick="randomizer(event)" src="images/food2.jpg" alt="food2">
+	<img class="filmStill" id="rightImage" onClick="randomizer(event)" src="images/food4.jpg" alt="food4">
+	
+	
+		 </div>
+</body>
+	
+<script>
+
+	
+// elements that can change
+	
+	var leftImage = document.getElementById("leftImage")
+	var middleImage = document.getElementById("middleImage")
+	var rightImage = document.getElementById("rightImage")
+function randomizer(event){
+	var x = Math.random()
+	console.log("var x = " + x);
+	consule.log(event.currentTarget.id);
+	if (x == 1){	event.currentTarget.src = pizza;
+			  }
+	
+	if (x == 2){
+		event.currentTarget.src = food2;
+	
+	}
+	
+	if (x == 3){
+	event.currentTarget.src = food3
+	
+	}
+	
+	if (x == 4){
+	event.currentTarget.src = food4
+	
+	}
+	if (x == 4){
+    event.currentTarget.src = food5
+	}
+	
+}
+	// list of images in the images folder
+	
+	var pizza = "images/pizza.jpg";
+	var food2 = "images/food2.jpg";
+	var food3 = "images/food3.jpg";
+	var food4 = "images/food4.jpg";
+	var food5 = "images/food5.jpg";
+	
+	function randomizer(event){
+
+}
+	
+</script>
+</html>
